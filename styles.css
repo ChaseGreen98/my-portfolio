@@ -86,7 +86,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 
-    border: 3px solid #27DFE5;
+    border: 3px solid #FB06B2;
     border-radius: 15px;
     background-color: transparent;
 
@@ -95,7 +95,7 @@ nav a:hover {
 
 .logo-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(234, 29, 104, 0.5);
+    box-shadow: 0 6px 16px rgba(3, 248, 85, 0.5);
 }
 
 .logo-card img {
@@ -124,17 +124,17 @@ nav a:hover {
     height: 250px;
     object-fit: cover;
 
-    border: 3px solid #27DFE5;  /* same accent color as your theme */
-    border-radius: 15px;        /* square with slightly rounded corners */
-    background-color: #01274d;  /* matches your site theme */
+    border: 3px solid #27DFE5; 
+    border-radius: 15px;       
+    background-color: #01274d; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .about p {
-    flex: 1;  /* text takes up remaining space */
+    flex: 1; 
 }
 
-/* Responsive stacking */
+
 @media (max-width: 700px) {
     .about {
         flex-direction: column;
