@@ -29,7 +29,7 @@ h1 {
 }
 
 h2, h3 {
-    color: #FB06B2;
+    color: #ffffff;
     font-size: 2rem;
     margin: 5px 0 0;
 }
@@ -80,7 +80,7 @@ nav a:hover {
   background: none;
   border: none;
   font-size: 2rem;
-  color: #FB06B2;
+  color: #06fb33;
   cursor: pointer;
 }
 
@@ -102,7 +102,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1.5rem;
-    max-width: 1000px;
+    max-width: 90%;
     margin: 2rem auto;
     padding: 1rem;
 }
@@ -114,7 +114,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 
-    border: 3px solid #FB06B2;
+    border: 3px solid #5215ec;
     border-radius: 15px;
     background-color: transparent;
 
@@ -127,6 +127,40 @@ nav a:hover {
 }
 
 .logo-card img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.contact_logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.contact-card {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid #06d6fb;
+    border-radius: 15px;
+    background-color: transparent;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(3, 248, 85, 0.5);
+}
+
+.contact-card img {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
@@ -194,7 +228,7 @@ nav a:hover {
 
   
   nav a {
-    width: 100%;
+    width: 50%;
     max-width: 180px;    
     padding: 0.25rem;     
     border-width: 2px;   
