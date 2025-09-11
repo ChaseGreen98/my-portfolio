@@ -16,18 +16,22 @@
             <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
             <nav>
-            <a id="about_button" href="#about">
-                <img src="portfolio-assets/about_button.png" alt="About Icon">
-            </a>
-            <a id="skills_button" href="#skills">
-                <img src="portfolio-assets/skills_button.png" alt="Skills Icon">
-            </a>
-            <a id="projects_button" href="#projects">
-                <img src="portfolio-assets/projects_button.png" alt="Projects Icon">
-            </a>
-            <a id="contact_button" href="#contact">
-                <img src="portfolio-assets/contact_button.png" alt="Contact Icon">
-            </a>
+                <a id="about_button" href="#about">
+                    <img src="portfolio-assets/about_button.png" alt="About Icon">
+                    <span class="nav-text">About</span>
+                </a>
+                <a id="skills_button" href="#skills">
+                    <img src="portfolio-assets/skills_button.png" alt="Skills Icon">
+                    <span class="nav-text">Skills</span>
+                </a>
+                <a id="projects_button" href="#projects">
+                    <img src="portfolio-assets/projects_button.png" alt="Projects Icon">
+                    <span class="nav-text">Projects</span>
+                </a>
+                <a id="contact_button" href="#contact">
+                    <img src="portfolio-assets/contact_button.png" alt="Contact Icon">
+                    <span class="nav-text">Contact</span>
+                </a>
             </nav>
             <div id="menu_bar_border"></div>
         </div>
@@ -39,6 +43,7 @@
     </div>
 
     <div class="logos" id="skills">
+        <p id="skills_text">Skills & Technologies</p>
         <div class="logo-card">
             <img src="portfolio-assets/godot_logo.png" alt="Godot Logo">
         </div>
@@ -75,6 +80,7 @@
     </div>
 
     <div class="contact_logos" id="contact">
+        <p id="contact_text">Contact Me</p>
         <div class="contact-card">
             <a href="https://www.linkedin.com/in/chase-green1998/" target="_blank" rel="noopener noreferrer">
                 <img src="portfolio-assets/linkedin_logo.png" alt="LinkedIn Logo">
@@ -89,14 +95,35 @@
             </a></div>
     </div>
 
-    <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    <button id="scrollToNav" aria-label="Go to top">⬆</button>
 
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
     });
     </script>
+
+    <script>
+        const scrollBtn = document.getElementById('scrollToNav');
+        const menuBar = document.querySelector('.menu_bar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        scrollBtn.addEventListener('click', () => {
+            menuBar.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
 
 </body>
 </html>
