@@ -39,15 +39,14 @@
     </header>
 
     <main>
-        <!-- ABOUT SECTION -->
         <div class="about section active" id="about">
             <div class="about-content">
-                <p>Hi! My name is Chase, and I grew up in Water Valley, Mississippi. I'm currently attending Base Camp, a prestigious coding academy to further pursue the passion for tech that's been a driving force in my life. Gaining knowledge of various coding languages and frameworks such as Python, HTML & CSS, Java, Godot, and others has only reinforced my love for all things tech. I have a passion for both software and hardware; my journey started by self teaching myself how to fix gaming consoles, even briefly freelancing as an IT tech for hardware troubleshooting. I'm looking to break into the tech industry; I have a particular interest in AI development, game development, as well as server/cloud architecture. Whether it's building computers part by part or making the software that runs them, I'm the guy ready and excited to get on it.</p>
+                <p id="about_header_text">I'm a new software developer with a deep passion for coding and a problem solving mindset. I view every challenge as a puzzle and every project as something to take pride in.</p>
+                <p id="about_body_text">Hi! My name is Chase, and I grew up in Water Valley, Mississippi. I'm currently attending Base Camp, a prestigious coding academy to further pursue the passion for tech that's been a driving force in my life. Gaining knowledge of various coding languages and frameworks such as Python, HTML & CSS, Java, Godot, and others has only reinforced my love for all things tech. I have a passion for both software and hardware; my journey started by self teaching myself how to fix gaming consoles, even briefly freelancing as an IT tech for hardware troubleshooting. I'm looking to break into the tech industry; I have a particular interest in AI development, game development, as well as server/cloud architecture. Whether it's building computers part by part or making the software that runs them, I'm the guy ready and excited to get on it.</p>
                 <img src="portfolio-assets/headshot.jpeg" alt="Profile Picture">
             </div>
         </div>
 
-        <!-- SKILLS SECTION -->
         <div class="logos section" id="skills">
             <p id="skills_text">Skills & Technologies</p>
             <div class="logos-grid">
@@ -65,30 +64,32 @@
             </div>
         </div>
 
-        <!-- PROJECTS SECTION -->
         <div class="projects section" id="projects">
             <p id="projects_text">Projects</p>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-link"><a href="https://github.com/ChaseGreen98/django-project" target="blank" rel="noopener noreferrer">PC Archive</a></div>
                     <div class="project-text"><p>A Django application that utilizes websockets via Django Channels to create a responsive pc builder tool with live updating chat room functions with a retro design.</p></div>
+                    <div class="project-screenshot"><img src="portfolio-assets/django_screenshot.png" alt="django-image"></div>
                 </div>
                 <div class="project-card">
                     <div class="project-link"><a href="https://github.com/jrsossaman/Betting-On-The-Races-React" target="blank" rel="noopener noreferrer">Betting On the Races</a></div>
-                    <div class="project-text"><p>A collaborative project utilizing React and a provided API to create an application where the user can make bets on provided racers.</p></div>
+                    <div class="project-text"><p>A collaborative project utilizing React and a provided API to create an application where the user can make bets on provided racers. My role was primarily to handle the API functionality.</p></div>
+                    <div class="project-screenshot"><img src="portfolio-assets/react_screenshot.png" alt="react-image"></div>
                 </div>
                 <div class="project-card">
                     <div class="project-link"><a href="https://github.com/Zac-Wa1ters/Idno-Care" target="blank" rel="noopener noreferrer">Idno Care</a></div>
                     <div class="project-text"><p>A simple text based pet care simulation game; this is was a collaborative project between me and other base camp students. The game features an inventory system, dynamically changing pet stats, and a simple random event system.</p></div>
+                    <div class="project-screenshot"><img src="portfolio-assets/idno.png" alt="idno-image"></div>
                 </div>
                 <div class="project-card">
                     <div class="project-link"><a href="https://github.com/ChaseGreen98/pygame_snake" target="blank" rel="noopener noreferrer">Snake Recreation</a></div>
                     <div class="project-text"><p>A loose recreation of the classic game of snake using the Pygame library. It features responsive controls and increasing difficulty.</p></div>
+                    <div class="project-screenshot"><img src="portfolio-assets/pygame_screenshot.png" alt="pygame-image"></div>
                 </div>
             </div>
         </div>
 
-        <!-- CONTACT SECTION -->
         <div class="contact_logos section" id="contact">
             <p id="contact_text">Contact Me</p>
             <div class="contact-grid">
@@ -121,7 +122,6 @@
 
                 if (currentSection === targetSection) return;
 
-                // fade out current
                 currentSection.classList.add('fade-out');
 
                 setTimeout(() => {
@@ -133,7 +133,7 @@
 
                     navLinks.forEach(l => l.classList.remove('active'));
                     link.classList.add('active');
-                }, 500); // match CSS transition
+                }, 500); 
             });
         });
     </script>

@@ -79,6 +79,8 @@ nav {
     width: 100%;
     max-width: 90%;
     margin: 1rem 0;
+    position: relative;
+    left: 60px;
 }
 
 nav a {
@@ -100,7 +102,7 @@ nav a img {
     object-fit: contain;
 }
 
-/* Hide nav text (icon-only buttons) */
+
 .nav-text {
     display: none;
 }
@@ -125,7 +127,7 @@ nav a.active {
     cursor: pointer;
 }
 
-/* Frame-style menu border */
+
 #menu_bar_border {
     width: 90%;
     padding: 0.5rem;
@@ -190,7 +192,29 @@ main {
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
-.about p {
+#about_header_text {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 10px hsl(357, 100%, 54%);
+    animation: hue-shift 7s infinite alternate;
+}
+
+@keyframes hue-shift {
+  0% {
+    text-shadow: 0 0 10px hsl(357, 100%, 54%),
+                 0 0 20px hsl(357, 100%, 54%);
+  }
+  50% {
+    text-shadow: 0 0 10px hsl(120, 100%, 50%),
+                 0 0 20px hsl(120, 100%, 50%);
+  }
+  100% {
+    text-shadow: 0 0 10px hsl(240, 100%, 50%),
+                 0 0 20px hsl(240, 100%, 50%);
+  }
+}
+
+#about_body_text {
     flex: 1;
     min-width: 250px;
     color: white;
@@ -290,6 +314,11 @@ main {
     text-shadow: 0 0 5px #27DFE5, 0 0 10px #27DFE5;
 }
 
+.projects img {
+    width: 250px;
+    height: 250px;
+}
+
 .project-text p {
     color: white;
 }
@@ -329,10 +358,10 @@ main {
 /* =====================
    THEME COLORS
 ===================== */
-.theme-about { background-color: #011936; }
-.theme-skills { background-color: #021b2d; }
-.theme-projects { background-color: #0a0329; }
-.theme-contact { background-color: #03291b; }
+.theme-about { background-color: #110051; }
+.theme-skills { background-color: #49035b; }
+.theme-projects { background-color: #4f030d; }
+.theme-contact { background-color: #033309; }
 
 /* =====================
    MOBILE
@@ -350,6 +379,30 @@ main {
 
     nav.active {
         display: flex;
+    }
+
+    #about_button {
+        position: relative;
+        left: 55px;
+        max-height: 45px;
+    }
+
+    #skills_button {
+        position: relative;
+        left: 55px;
+        max-height: 45px;
+    }
+
+    #projects_button {
+        position: relative;
+        left: 55px;
+        max-height: 45px;
+    }
+
+    #contact_button {
+        position: relative;
+        left: 55px;
+        max-height: 45px;
     }
 
     .menu-toggle {
