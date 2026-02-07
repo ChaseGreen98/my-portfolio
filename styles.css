@@ -382,18 +382,26 @@ main {
     }
 
     #about_button {
+        position: relative;
+        right: 30px;
         max-height: 45px;
     }
 
     #skills_button {
+        position: relative;
+        right: 30px;
         max-height: 45px;
     }
 
     #projects_button {
+        position: relative;
+        right: 30px;
         max-height: 45px;
     }
 
     #contact_button {
+        position: relative;
+        right: 30px;
         max-height: 45px;
     }
 
